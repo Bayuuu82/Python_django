@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}" />
+  </head>
+
+  <body>
+    <img id="banner" src="{% static 'about/img/about.jpg' %}" />
+    <div id="Menu">
+      <ul>
+        <li><a href="/" class="">Home</a></li>
+        <li><a href="/about" class="">About</a></li>
+        <li><a href="/buku" class="">Buku</a></li>
+      </ul>
+    </div>
+
+    <!--CONTAINER BOOTSTRAP -->
+    <!--https://getbootstrap.com/docs/4.5/getting-started/introduction/-->
+
+    <div class="container">
+      <p></p>
+      <!--https://getbootstrap.com/docs/4.5/components/alerts/-->
+      <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">About Django</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quis consequuntur adipisci dolorum quam vero, eveniet vitae ipsa magnam natus libero, aperiam est quidem officia nesciunt earum eos, dignissimos dolorem.</p>
+        <hr />
+        <p class="mb-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aperiam aliquid eligendi architecto, nobis id voluptatibus ipsam quas, assumenda cupiditate maxime eveniet repudiandae repellendus deserunt deleniti aliquam vel
+          doloribus unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur consequuntur perferendis corrupti deleniti deserunt officia rerum omnis, illo reprehenderit perspiciatis necessitatibus? Laudantium fuga,
+          distinctio voluptatibus illum dolores provident! Quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis consequatur a, minima fugiat praesentium itaque illum porro blanditiis saepe tempore soluta officia.
+          Labore iste qui possimus at id ea. Vitae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aperiam aliquid eligendi architecto, nobis id voluptatibus ipsam quas, assumenda cupiditate maxime eveniet repudiandae
+          repellendus deserunt deleniti aliquam vel doloribus unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur consequuntur perferendis corrupti deleniti deserunt officia rerum omnis, illo reprehenderit
+          perspiciatis necessitatibus? Laudantium fuga, distinctio voluptatibus illum dolores provident! Quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis consequatur a, minima fugiat praesentium itaque illum
+          porro blanditiis saepe tempore soluta officia. Labore iste qui possimus at id ea. Vitae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aperiam aliquid eligendi architecto, nobis id voluptatibus ipsam quas,
+          assumenda cupiditate maxime eveniet repudiandae repellendus deserunt deleniti aliquam vel doloribus unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur consequuntur perferendis corrupti deleniti deserunt
+          officia rerum omnis, illo reprehenderit perspiciatis necessitatibus? Laudantium fuga, distinctio voluptatibus illum dolores provident! Quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis consequatur a,
+          minima fugiat praesentium itaque illum porro blanditiis saepe tempore soluta officia. Labore iste qui possimus at id ea. Vitae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aperiam aliquid eligendi architecto,
+          nobis id voluptatibus ipsam quas, assumenda cupiditate maxime eveniet repudiandae repellendus deserunt deleniti aliquam vel doloribus unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur consequuntur
+          perferendis corrupti deleniti deserunt officia rerum omnis, illo reprehenderit perspiciatis necessitatibus? Laudantium fuga, distinctio voluptatibus illum dolores provident! Quaerat! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Perferendis consequatur a, minima fugiat praesentium itaque illum porro blanditiis saepe tempore soluta officia. Labore iste qui possimus at id ea. Vitae?
+        </p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <span class="text-light">Copyright 2022</span>
+      </div>
+    </footer>
+    <!-- FOOTER -->
+
+    <!-- link js -->
+    <script src="{% static 'vendor/bootstrap/bootstrap.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/jquery-3.3.1.slim.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/popper.min.js' %}"></script>
+  </body>
+</html>

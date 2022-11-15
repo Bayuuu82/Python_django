@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Halaman Utama</title>
+    <title>buku tamu</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}" />
   </head>
 
   <body>
-    <img id="banner" src="{% static 'img/home.jpg' %}" />
+    <img id="banner" src="{% static 'buku/img/crud.jpg' %}" />
     <div id="Menu">
       <ul>
         <li><a href="/" class="">Home</a></li>
@@ -17,23 +17,20 @@
         <li><a href="/tamus" class="">Buku Tamu</a></li>
       </ul>
     </div>
-
-    <!-- ISI KONTEN HOME -->
+    <br />
+    <!-- ISI KONTEN TAMU -->
+    <br />
     <div class="container">
-      <br />
-      <div class="jumbotron">
-        <h1 class="display-4">Selamat Datang di Era Industri 4.0</h1>
-        <p class="lead">Topik Revulisi Industri 4.0 yaitu:</p>
-        <hr class="my-4" />
-        <p>Internet of Things, saat komputer dan smartphon tersambung ke interner</p>
-        <hr class="my-4" />
-        <p>Cloud Computing, Proses data sampai bermain game tidak perlu menggunakan device yang canggih, cukupt terhubung deengan internet. Data diproses pada komputer server yang menyediakan seciver tersebut</p>
-        <hr class="my-4" />
-        <p>Machine Learning, yaitu mesin yang memiliki kemampuan untuk belajar, hingga melakukan</p>
-        <a class="btn btn-primatu btn-lg" href="#" role="button">Topik Layananya</a>
-      </div>
+      <form method="post">
+        {% csrf_token %}
+        <table>
+          {{bukutamus.as_table}}
+        </table>
+        <button class="btn btn-success" type="submit">Simpan</button>
+      </form>
     </div>
-    <!-- END ISI KONTEN HOME -->
+    <br />
+    <!-- END ISI KONTEN TAMU -->
 
     <!-- footer  -->
     <footer class="footer">

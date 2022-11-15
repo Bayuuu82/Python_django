@@ -23,4 +23,5 @@ urlpatterns = [
     path('', views.index),
     path('about/', include('about.urls')),
     path('buku/', include('buku.urls')),
+    path('tamus/', include('tamus.urls')),
 ]

@@ -4,6 +4,7 @@ from django.shortcuts import render
 from . models import Post
 
 def index(request):
-    postingan = Post.object.all()
-    contex = {'TampungPostingan': postingan}
-    return render(request, 'buku/index.html', contex)
+    postingan = Post.objects.all()
+    
+    context = {'Tampungpostingan': postingan,}
+    return render(request, 'buku/index.html', context)

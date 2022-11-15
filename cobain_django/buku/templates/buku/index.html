@@ -4,7 +4,6 @@
   <head>
     <title>Buku</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    <!-- bootstrap css  -->
     <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}" />
   </head>
 
@@ -15,20 +14,21 @@
         <li><a href="/" class="">Home</a></li>
         <li><a href="/about" class="">About</a></li>
         <li><a href="/buku" class="">Buku</a></li>
+        <li><a href="/tamus" class="">Buku Tamu</a></li>
       </ul>
     </div>
 
-    <!-- CONTAINER BOOTSTRAP -->
+    <h2>Disini seharusnya ada list buku</h2>
+    <!-- LOOPING ISI DB -->
     <div class="container">
-      {% for TampungPost in TampungPostingan %}
-      <h3>{{TampungPost.judul}}</h3>
-      <p>{{TampungPost.sinopsis}}</p>
+      {% for penampungpost in Tampungpostingan %}
+      <h3>{{penampungpost.judul}}</h3>
+      <p>{{penampungpost.sinopsis}}</p>
       {% endfor %}
     </div>
+    <!-- LOOPING ISI DB -->
 
-    <!-- END CONTAINER BOOTSTRAP -->
-
-    <!-- footer  -->
+    <!-- FOOTER  -->
     <footer class="footer">
       <div class="container">
         <span class="text-light">Copyright 2022</span>
